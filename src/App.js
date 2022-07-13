@@ -4,6 +4,7 @@ function App() {
   return (
     <div>
       <Navbar />
+      <a href="/shop">Shop now</a>
     </div>
   );
 }
