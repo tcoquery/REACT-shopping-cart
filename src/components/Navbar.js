@@ -1,3 +1,4 @@
+import {useState} from "react";
 import { MenuItems } from "./MenuItems";
 
 const Navbar = () => {

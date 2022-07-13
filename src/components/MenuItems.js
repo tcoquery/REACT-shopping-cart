@@ -8,10 +8,5 @@ export const MenuItems = [
       Title: "Shop",
       url: "/shop",
       cName: "nav-links"
-    },
-    {
-      Title: "Cart",
-      url: "#",
-      cName: "nav-links"
     }
   ];

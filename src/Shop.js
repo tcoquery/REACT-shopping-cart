@@ -13,20 +13,43 @@ import yucca from "./img/yucca.jpg"
 
 const Shop = () => {
     const [plants, setPlants] = useState([
-        {id:uniqid(), name:'aglaonema', img:aglaonema},
-        {id:uniqid(), name:'alocasia', img:alocasia},
-        {id:uniqid(), name:'calathea', img:calathea},
-        {id:uniqid(), name:'monstera', img:monstera},
-        {id:uniqid(), name:'peace-lily', img:peaceLily},
-        {id:uniqid(), name:'pothos', img:pothos},
-        {id:uniqid(), name:'spider-plant', img:spiderPlant},
-        {id:uniqid(), name:'yucca', img:yucca}
+        {id:uniqid(), name:'aglaonema', img:aglaonema, quantity:1},
+        {id:uniqid(), name:'alocasia', img:alocasia, quantity:1},
+        {id:uniqid(), name:'calathea', img:calathea, quantity:1},
+        {id:uniqid(), name:'monstera', img:monstera, quantity:1},
+        {id:uniqid(), name:'peace-lily', img:peaceLily, quantity:1},
+        {id:uniqid(), name:'pothos', img:pothos, quantity:1},
+        {id:uniqid(), name:'spider-plant', img:spiderPlant, quantity:1},
+        {id:uniqid(), name:'yucca', img:yucca, quantity:1}
       ]);
+    const [cart, setCart] = useState([]);
+
+    const addCartItem = (id, quantity) => {
+        const newCart = [];
+        for(let i = 0; i < quantity; i++) {
+            newCart.push(id)
+        }
+        setCart(cart.concat(newCart));
+    }
+
+    const handleQuantity = (e) => {
+        const {name, value} = e.target
+        const newPlants = plants.map(plant => {
+            if(name === plant.name) {
+                return {...plant, quantity: parseInt(value)}
+            }
+
+            return plant;
+        })
+		
+		
+		setPlants(newPlants);
+    }
 
     return (
         <div>
           <Navbar />
-          <Card plants={plants}/>
+          <Card plants={plants} cart={cart} onChange={handleQuantity} onClick={addCartItem}/>
           <p>All photos by <a href="http://www.feey.ch">Feey</a></p>
         </div>
       );
