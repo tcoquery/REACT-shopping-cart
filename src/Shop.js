@@ -13,14 +13,14 @@ import yucca from "./img/yucca.jpg"
 
 const Shop = () => {
     const [plants, setPlants] = useState([
-        {id:uniqid(), name:'aglaonema', img:aglaonema, quantity:1},
-        {id:uniqid(), name:'alocasia', img:alocasia, quantity:1},
-        {id:uniqid(), name:'calathea', img:calathea, quantity:1},
-        {id:uniqid(), name:'monstera', img:monstera, quantity:1},
-        {id:uniqid(), name:'peace-lily', img:peaceLily, quantity:1},
-        {id:uniqid(), name:'pothos', img:pothos, quantity:1},
-        {id:uniqid(), name:'spider-plant', img:spiderPlant, quantity:1},
-        {id:uniqid(), name:'yucca', img:yucca, quantity:1}
+        {id:uniqid(), name:'aglaonema', img:aglaonema, quantity:1, price:13.99},
+        {id:uniqid(), name:'alocasia', img:alocasia, quantity:1, price:11.99},
+        {id:uniqid(), name:'calathea', img:calathea, quantity:1, price:8.99},
+        {id:uniqid(), name:'monstera', img:monstera, quantity:1, price:15.99},
+        {id:uniqid(), name:'peace-lily', img:peaceLily, quantity:1, price:7.99},
+        {id:uniqid(), name:'pothos', img:pothos, quantity:1, price:5.99},
+        {id:uniqid(), name:'spider-plant', img:spiderPlant, quantity:1, price:9.99},
+        {id:uniqid(), name:'yucca', img:yucca, quantity:1, price:10.99}
       ]);
     const [cart, setCart] = useState([]);
 
