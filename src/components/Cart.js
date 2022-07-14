@@ -14,9 +14,8 @@ const Cart = (props) => {
                 return <div key={plant.id}>
                     <img alt={plant.name} src={plant.img}/>
                     <p>{plant.name}</p>
-                    <p>Quantity : {arrayCount(props.cart, plant.id)}</p>
+                    <p>Quantity : <button onClick={() => {props.removeFromCart(props.cart, plant.id)}}>-</button> {arrayCount(props.cart, plant.id)} <button onClick={() => {props.addToCart(plant.id)}}>+</button></p>
                     <p>Subtotal : {plant.price * arrayCount(props.cart, plant.id)} €</p>
-                    
                 </div>
                 }
             })}

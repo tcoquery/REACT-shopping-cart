@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import Card from "./components/Card";
 import Cart from "./components/Cart";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import uniqid from "uniqid";
 import aglaonema from "./img/aglaonema.jpg"
 import alocasia from "./img/alocasia.jpg"
@@ -39,18 +39,30 @@ const Shop = () => {
             if(name === plant.name) {
                 return {...plant, quantity: parseInt(value)}
             }
-
             return plant;
         })
-		
-		
 		setPlants(newPlants);
+    }
+    
+    const removeFromCart = (arr, value) => {
+        const index = arr.indexOf(value);
+
+        setCart([
+            ...cart.slice(0, index),
+            ...cart.slice(index+1, cart.length)
+        ]);            
+    }
+
+    const addToCart = (value) => {
+        const newArr = [];
+        newArr.push(value);
+        setCart(cart.concat(newArr));
     }
 
     return (
         <div>
           <Navbar />
-          <Cart cart={cart} plants={plants}/>
+          <Cart cart={cart} plants={plants} removeFromCart={removeFromCart} addToCart={addToCart}/>
           <Card plants={plants} cart={cart} onChange={handleQuantity} onClick={addCartItem}/>
           <p>All photos by <a href="http://www.feey.ch">Feey</a></p>
         </div>
