@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Card from "./components/Card";
+import Cart from "./components/Cart";
 import React, {useState} from "react";
 import uniqid from "uniqid";
 import aglaonema from "./img/aglaonema.jpg"
@@ -49,6 +50,7 @@ const Shop = () => {
     return (
         <div>
           <Navbar />
+          <Cart cart={cart} plants={plants}/>
           <Card plants={plants} cart={cart} onChange={handleQuantity} onClick={addCartItem}/>
           <p>All photos by <a href="http://www.feey.ch">Feey</a></p>
         </div>
