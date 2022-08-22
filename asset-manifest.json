@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/REACT-shopping-cart/static/css/main.34bb89e9.css",
+    "main.js": "/REACT-shopping-cart/static/js/main.bf598bbf.js",
+    "static/media/background.jpg": "/REACT-shopping-cart/static/media/background.f3fd8f419b7a906d50b3.jpg",
+    "static/media/alocasia.jpg": "/REACT-shopping-cart/static/media/alocasia.23b8527e7cbf0ada952e.jpg",
+    "static/media/monstera.jpg": "/REACT-shopping-cart/static/media/monstera.e76d46ba0fcd78bb3242.jpg",
+    "static/media/yucca.jpg": "/REACT-shopping-cart/static/media/yucca.ff7acac0c9930c8af10d.jpg",
+    "static/media/calathea.jpg": "/REACT-shopping-cart/static/media/calathea.eb27fdd6ed1b55c93e84.jpg",
+    "static/media/spider-plant.jpg": "/REACT-shopping-cart/static/media/spider-plant.c389e64e3323f72a24d6.jpg",
+    "static/media/aglaonema.jpg": "/REACT-shopping-cart/static/media/aglaonema.30e420f46ef16cbeb704.jpg",
+    "static/media/pothos.jpg": "/REACT-shopping-cart/static/media/pothos.35c8cda0fcda2f261a15.jpg",
+    "static/media/peace-lily.jpg": "/REACT-shopping-cart/static/media/peace-lily.0fb93de7a016e87e59f9.jpg",
+    "index.html": "/REACT-shopping-cart/index.html",
+    "main.34bb89e9.css.map": "/REACT-shopping-cart/static/css/main.34bb89e9.css.map",
+    "main.bf598bbf.js.map": "/REACT-shopping-cart/static/js/main.bf598bbf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34bb89e9.css",
+    "static/js/main.bf598bbf.js"
+  ]
+}
