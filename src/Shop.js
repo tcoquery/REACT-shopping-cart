@@ -59,12 +59,18 @@ const Shop = () => {
         setCart(cart.concat(newArr));
     }
 
+    const showCart = () => {
+        const cart = document.getElementById("cart");
+        cart.style.right = 0;
+    }
+
     return (
         <div>
           <Navbar />
-          <Cart cart={cart} plants={plants} removeFromCart={removeFromCart} addToCart={addToCart}/>
-          <Card plants={plants} cart={cart} onChange={handleQuantity} onClick={addCartItem}/>
-          <p>All photos by <a href="http://www.feey.ch">Feey</a></p>
+          <div class="flex">
+            <Card plants={plants} cart={cart} onChange={handleQuantity} onClick={addCartItem} showCart={showCart}/>
+            <Cart cart={cart} plants={plants} removeFromCart={removeFromCart} addToCart={addToCart}/>
+          </div>
         </div>
       );
 }

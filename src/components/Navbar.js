@@ -5,7 +5,7 @@ import { faBagShopping } from '@fortawesome/free-solid-svg-icons'
 const Navbar = () => {
 
 return (
-    <nav class="bg-white px-2 sm:px-4 py-2.5 w-full border-b border-gray-200">    
+    <nav class="fixed z-10 bg-white px-2 sm:px-4 py-2.5 w-full border-b border-gray-200">    
         <div class="container flex justify-between items-center mx-auto">
             <div></div>
             <h1 class="place-self-center font-bold text-3xl font-serif">Plants Gone Wild</h1>
