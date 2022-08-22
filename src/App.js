@@ -1,15 +1,18 @@
-
-import React, {useState} from "react";
+import React from "react";
 import Navbar from "./components/Navbar";
-
+import background from "./img/background.jpg";
 
 function App() {
 
-
   return (
-    <div>
+    <div class="h-screen w-full overflow-hidden">
       <Navbar />
-      <a href="/shop">Shop now</a>
+      <div class="h-full bg-center bg-cover flex flex-col items-center justify-center"  style={{backgroundImage: `url(${background})`}}>
+        <div class="bg-transparent px-2 py-4 border-2 border-white">        
+        <a href="/shop" class="font-serif text-black bg-white border border-white focus:outline-none hover:bg-gray-100 font-medium text-sm p-2.5">SHOP NOW</a>
+        </div>
+
+      </div>
     </div>
   );
 }

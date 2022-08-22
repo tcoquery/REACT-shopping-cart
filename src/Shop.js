@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import Card from "./components/Card";
 import Cart from "./components/Cart";
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import uniqid from "uniqid";
 import aglaonema from "./img/aglaonema.jpg"
 import alocasia from "./img/alocasia.jpg"
