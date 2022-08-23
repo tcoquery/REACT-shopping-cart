@@ -12,7 +12,7 @@ Screenshots:
 
 ![Homepage](https://imgur.com/YBItNvq.png)
 
-![shop page](https://i.imgur.com/a9Q3zJI.png)
+![shop page](https://imgur.com/VgpyzNh.png)
 
 ![shop page with cart](https://i.imgur.com/6IOzhtA.png)
 
