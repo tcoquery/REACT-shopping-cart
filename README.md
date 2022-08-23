@@ -10,7 +10,7 @@ Try it here : https://tcoquery.github.io/REACT-shopping-cart/
 
 Screenshots:
 
-[!Homepage](https://imgur.com/YBItNvq)
+(!Homepage)[https://imgur.com/YBItNvq]
 
 [!shop page](https://i.imgur.com/a9Q3zJI.png)
 
