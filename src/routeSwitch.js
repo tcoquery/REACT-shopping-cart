@@ -7,8 +7,8 @@ const RouteSwitch = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/shop" element={<Shop />} />
+        <Route path={process.env.PUBLIC_URL + '/'} element={<App />} />
+        <Route path={process.env.PUBLIC_URL + '/shop'} element={<Shop />} />
       </Routes>
     </BrowserRouter>
   );
