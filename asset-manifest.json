@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/REACT-shopping-cart/static/css/main.34bb89e9.css",
-    "main.js": "/REACT-shopping-cart/static/js/main.a1c381c8.js",
+    "main.js": "/REACT-shopping-cart/static/js/main.42db0c62.js",
     "static/media/background.jpg": "/REACT-shopping-cart/static/media/background.f3fd8f419b7a906d50b3.jpg",
     "static/media/alocasia.jpg": "/REACT-shopping-cart/static/media/alocasia.23b8527e7cbf0ada952e.jpg",
     "static/media/monstera.jpg": "/REACT-shopping-cart/static/media/monstera.e76d46ba0fcd78bb3242.jpg",
@@ -13,10 +13,10 @@
     "static/media/peace-lily.jpg": "/REACT-shopping-cart/static/media/peace-lily.0fb93de7a016e87e59f9.jpg",
     "index.html": "/REACT-shopping-cart/index.html",
     "main.34bb89e9.css.map": "/REACT-shopping-cart/static/css/main.34bb89e9.css.map",
-    "main.a1c381c8.js.map": "/REACT-shopping-cart/static/js/main.a1c381c8.js.map"
+    "main.42db0c62.js.map": "/REACT-shopping-cart/static/js/main.42db0c62.js.map"
   },
   "entrypoints": [
     "static/css/main.34bb89e9.css",
-    "static/js/main.a1c381c8.js"
+    "static/js/main.42db0c62.js"
   ]
 }
